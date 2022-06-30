@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+div{
+    
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px ;
+    
+}
+div.caixa1{
+    background-color:red ;
+    padding: 30px ;
+    border: 3px solid blue;
+}
+div.caixa2{
+    background-color:blue ;
+    padding: 30px ;
+    border: 5px dotted green;
+}
+div.caixa3{
+    background-color:green ;
+    padding: 30px ;
+    border: 7px dashed yellow;
+}
+div.caixa4{
+    background-color:yellow;
+    padding: 30px ;
+    border: 7px double red;
+}
