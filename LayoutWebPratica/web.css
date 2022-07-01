@@ -1,0 +1,24 @@
+header{
+    background-color: red;
+}
+main{
+    background-color:lightblue;
+}
+footer{
+    text-align: center;
+    background-color: mediumpurple;
+}
+div.cupom{
+    display: block;
+    border: 2px solid black;
+}
+div.menuDropDown{
+    display: block;
+    border: 2px solid black;
+}
+.buscar, .loginSacola, .logo{
+    display: inline;
+    border: 2px dotted ;
+    width: 300px;
+    box-sizing: border-box;
+}
