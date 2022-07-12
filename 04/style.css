@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+body{
+    padding: 100px;
+    margin: 0;
+
+}
+div{
+    width: 400px;
+    height: 400px;
+    border: 2px solid gray;
+    padding:50px;
+}
+@keyframes fantasma{
+    0% {opacity: 0%;}
+    25% {transform: translateY(-20px); 
+        opacity: 100%;
+    }
+    100% {opacity: 0%;}
+}
+.fantasma{
+    width: 100px;
+    height: 100px;
+    animation-duration: 4s;
+    animation-name: fantasma;
+    animation-iteration-count: infinite;
+}
+
+
