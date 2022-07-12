@@ -1,12 +1,14 @@
 *{box-sizing: border-box;}
 body{
-    padding: 100px;
+    padding: 50px;
     margin: 0;
-
+display: flex;
+    flex-direction:row;
 }
 div{
-    width: 400px;
-    height: 400px;
+     
+    width: 200px;
+    height: 200px;
     border: 2px solid gray;
     padding:50px;
 }
@@ -24,5 +26,44 @@ div{
     animation-name: fantasma;
     animation-iteration-count: infinite;
 }
+@keyframes loading-1 {
+   to{
+    transform: rotate(1turn);
+   }
+    
+    
+}
+.loading_1{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #e5e5e5;
+    border-top-color: #51d4db ;
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-name: loading-1;
+    animation-iteration-count:infinite;
+}
+.loading_2a{
+    width: 120px;
+    height: 40px;
+    padding: 10px 3px 0px 0px;
+    font-size: 20px;
+}
+@keyframes loading_2 {
+    0%{width: 80px;}
+    50%{width: 120px;}
+    100%{width: 80px;}
+        
+    
+}
+.loading_2b{
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    animation-duration:3000ms;
+    animation-name: loading_2;
+    animation-iteration-count: infinite ;
+}
+
 
 
