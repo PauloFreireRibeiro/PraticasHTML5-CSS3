@@ -1,0 +1,80 @@
+/*   <-- Configurações para as animações --> */
+
+/* Animações são realizadas atraves da ferramenta @keyframes, 
+que se realiza de 0% a 100% onde pode haver infinitas configurações, entre as porcentagens,
+dentro dessa configuração será definido os frames que riam apareces e como serão apresentados */
+
+/* 1°-> Definir parametros da página para*/
+*{box-sizing: border-box;}
+body{
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+}
+/* 2°-> Criando uma caixa para melhor visibilidade da animação */
+div{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    padding:50px;
+}
+
+/* 3°A Animação fantasma */
+
+@keyframes fantasma{ /* cria tag de animação e nome pela qual ela corresponde */ 
+    0% {opacity: 0%;} /* torna a imagem invisivel durante o momento inicial da animação */ 
+    25% {transform: translateY(-20px); /* move a imagem do eixo Y (Vertical) em relação a posição inicial da imagem */
+        opacity: 100%;} /* torna imangem visivel durante a animação */
+    100% {opacity: 0%;} /* torna a imagem invisivel durante o momento final da animação */ 
+}
+.fantasma{ /* classe onde sera tribuido a animação */
+    width: 100px; /* largura da imagem */
+    height: 100px; /* altura da imagem */
+    animation-duration: 4s; /* comando define a duração da animação em segundos(s) ou milisegundos(ms) */
+    animation-name: fantasma; /* indica a qual tag de animação e chamada */
+    animation-iteration-count: infinite; /* define a duração da animação */
+}
+@keyframes loading-1 {
+   to{ /* atribui que todas as linhas executem a função */
+    transform: rotate(1turn); /* rotacina a propriedade definida, de acordo com a quantidade exigida */
+   }
+    
+    
+}
+.loading_1{
+    content: "15";
+    width: 100px;
+    height: 100px;
+    border: 10px solid #e5e5e5;
+    border-top-color: #51d4db ;
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-name: loading-1;
+    animation-iteration-count:infinite;
+}
+.loading_2a{
+    width: 120px;
+    height: 40px;
+    padding: 10px 3px 0px 0px;
+    font-size: 20px;
+}
+@keyframes loading_2b {
+    0%{width: 80px;}
+    50%{width: 120px;}
+    100%{width: 80px;}
+        
+    
+}
+.loading_2b{
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    animation-duration:3000ms;
+    animation-name: loading_2b;
+    animation-iteration-count: infinite ;
+}
+
+
+

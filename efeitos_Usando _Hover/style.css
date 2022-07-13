@@ -1,3 +1,5 @@
+/* Aqui utilizaremos a subclasse :hover para realizar a interação com as caixas */
+
 *{box-sizing: border-box;}
 body{
     width:1264px;
@@ -10,19 +12,19 @@ margin: 30px;
 padding: 50px;
 }
 
-.red{
+.red{ /* caixa-1 */
 background-color: red;
 font-size: 24px;
 color: black;
 transition: all 600ms;
 }
-.red:hover{
+.red:hover{ /* realiza a mudança nas caracteristicas da caixa quando o curso do mouse estiver sobre ele */
 color: white;
 border-radius:100px;
 font-size: 40px;
 background-color: rgb(250, 100, 100);
 }
-.green{
+.green{ /* caixa-2 */
     border-radius: 100px;
     background-color: green;
     font-size: 24px;
@@ -34,7 +36,7 @@ background-color: rgb(250, 100, 100);
     font-size: 40px;
     background-color: lightgreen;
 }
-.blue{
+.blue{ /* caixa-3 */
     background-color: blue;
     font-size: 24px;
     color: black;
